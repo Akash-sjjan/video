@@ -1,0 +1,139 @@
+body {
+  background: #eeeeee;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+}
+
+video {
+  width: 100%;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  /* border-radius: 10px; */
+}
+
+.video-wrapper:hover .controls {
+  transform: translateY(0%);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;*/
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  padding: 14px;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+  /* transform: translateY(150%); */
+  /* transition: all 0.3s ease-in-out; */
+}
+
+/* video::-webkit-media-controls {
+  display: none !important;
+} */
+/* video:not(:root):fullscreen {
+  background-color: red;
+  position: absolute;
+} */
+.actions button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.actions button i {
+  background-color: none;
+  color: white;
+  font-size: 30px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  height: 4px;
+  width: 350px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  height: 6px;
+}
+
+input[type="range"]::-moz-range-progress {
+  background: white;
+}
+
+.velocity {
+  appearance: none;
+  background: none;
+  color: white;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+.mute-btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+}
+
+.mute-btn i {
+  background-color: none;
+  color: white;
+  font-size: 20px;
+}
+/* ********************************************* */
+
+.progress {
+  height: 15px;
+}
+.progress {
+  flex: 10;
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  height: 5px;
+  transition: height 0.3s;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.progress__filled {
+  width: 50%;
+  background: #ffc600;
+  flex: 0;
+  flex-basis: 0%;
+}

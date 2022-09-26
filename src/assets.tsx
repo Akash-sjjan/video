@@ -1,0 +1,5 @@
+export const play = require('./assets/play.png')
+export const fullscreen = require('./assets/fullscreen.png')
+export const playCenterBtn = require('./assets/playCenterBtn.png')
+export const vidSetting = require('./assets/vidSetting.png')
+export const volume = require('./assets/volume.png')
