@@ -45,8 +45,8 @@ video {
   flex-wrap: wrap;
   background: transparent;
   -webkit-backdrop-filter: blur(4px);
-  /* transform: translateY(150%); */
-  /* transition: all 0.3s ease-in-out; */
+  transform: translateY(150%);
+  transition: all 0.3s ease-in-out;
 }
 
 /* video::-webkit-media-controls {

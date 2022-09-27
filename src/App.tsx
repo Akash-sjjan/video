@@ -1,18 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { useNavigate } from "react-router-dom";
 
 function App() {
-  const navigation = useNavigate()
+  const navigation = useNavigate();
 
   return (
     <div className="App">
-      <button onClick={() => {
-        localStorage.setItem('url', 'https://test-videos.co.uk/vids/bigbuckbunny/webm/vp8/360/Big_Buck_Bunny_360_10s_1MB.webm');
-        localStorage.setItem('urll', 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4');
-        navigation('/Trigger')
-      }}>Link</button>
+      <button
+        onClick={() => {
+          localStorage.setItem("url", "https://test-videos.co.uk/vids/bigbuckbunny/webm/vp8/360/Big_Buck_Bunny_360_10s_1MB.webm");
+          localStorage.setItem("urll", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4");
+          navigation("/LiveWebinar");
+        }}
+      >
+        Link
+      </button>
     </div>
   );
 }
