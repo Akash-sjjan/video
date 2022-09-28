@@ -1,0 +1,78 @@
+section {
+  table {
+    tbody {
+      tr {
+        th {
+          // text-align: right;
+          // padding-right: 0.5rem;
+        }
+
+        td {
+          // padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+.Video {
+  position: relative;
+  // padding-top: 56.25% ;/* Player ratio: 100 / (1280 / 720) */
+  aspect-ratio: 16 / 9;
+}
+
+.videoControls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 1vw;
+  display: "flex";
+  justify-content: center;
+  align-items: center;
+}
+.videoBottomControllsC {
+  width: 95%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.videoControlsRight {
+  display: flex;
+}
+.videoControlsLeft {
+  margin-left: 0.5vw;
+  background: transparent;
+  border: 0px;
+}
+.videoControlsSettingBtn {
+  background: transparent;
+  border: 0px;
+  margin-right: 0.5vw;
+}
+.videoControlsFullscreenBtn {
+  background: transparent;
+  border: 0px;
+}
+.videoControlsSettingImg {
+  width: 1.3vw;
+}
+.videoControlsFullscreenImg {
+  width: 1.3vw;
+}
+.videoLiveLabelC {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 0.2vw;
+  overflow: hidden;
+  align-items: center;
+}
+.videoLiveLabel {
+  display: flex;
+}
+.videoLiveTxt {
+}

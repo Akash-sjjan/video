@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
 
 import useVideoPlayer from "./hooks/useVideoPlayer";
-import { fullscreen, play, volume } from "./assets";
+import { fullscreen, play, volumeIcon } from "./assets";
 
 const video = "";
 const useStyles = makeStyles({
@@ -162,7 +162,7 @@ const ReactVideoJS = ({ url }: any) => {
                   onClick={togglePlay}
                 >
                   {!playerState.isPlaying ? (
-                    <img src={volume} alt="" style={{ width: "1.3vw" }} />
+                    <img src={volumeIcon} alt="" style={{ width: "1.3vw" }} />
                   ) : (
                     <img src={play} alt="" style={{ width: "1.3vw" }} />
                   )}
@@ -176,7 +176,7 @@ const ReactVideoJS = ({ url }: any) => {
                   onClick={toggleMute}
                 >
                   {!playerState.isMuted ? (
-                    <img src={volume} alt="" style={{ width: "1.3vw" }} />
+                    <img src={volumeIcon} alt="" style={{ width: "1.3vw" }} />
                   ) : (
                     <img src={play} alt="" style={{ width: "1.3vw" }} />
                   )}

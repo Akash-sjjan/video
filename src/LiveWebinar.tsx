@@ -40,13 +40,13 @@ const styles = (theme: Theme) =>
       marginBottom: "2vw",
     },
     lwVideoContainer: {
-      //   backgroundColor: "red",
-      height: "30vw",
-      borderRadius: "1vw",
+      // backgroundColor: "red",
+      // height: "30vw",
+      // borderRadius: "1vw",
       overflow: "hidden",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
+      // display: "flex",
+      // justifyContent: "center",
+      // alignItems: "center",
     },
     lwControlsContainer: {
       display: "flex",
@@ -296,7 +296,7 @@ class LiveWebinar extends Component<Props, States> {
           <Typography className={classes.lwTitle}>Webinar Name</Typography>
           <div className={classes.lwHr} />
           <div className={classes.lwVideoContainer}>
-            <ReactPlayerr url={url} />
+            <ReactPlayerr urll={url} styles={{ borderRadius: "1vw", overflow: "hidden", height: "30vw" }} />
           </div>
           <div className={classes.lwControlsContainer}>
             <Button className={classes.lwControlItemC}>
