@@ -296,7 +296,7 @@ class LiveWebinar extends Component<Props, States> {
           <Typography className={classes.lwTitle}>Webinar Name</Typography>
           <div className={classes.lwHr} />
           <div className={classes.lwVideoContainer}>
-            <ReactPlayerr urll={url} styles={{ borderRadius: "1vw", overflow: "hidden", height: "30vw" }} />
+            <ReactPlayerr urll={url} styles={{ borderRadius: "1.1vw", overflow: "hidden", height: "30vw" }} />
           </div>
           <div className={classes.lwControlsContainer}>
             <Button className={classes.lwControlItemC}>
